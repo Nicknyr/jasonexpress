@@ -1,4 +1,24 @@
 var express = require('express');
+
+var app = express();
+
+app.get('/', function(req, res){
+  res.render('index.html');
+});
+
+
+
+app.listen(3000);
+
+
+
+
+
+
+
+
+/*
+var express = require('express');
 var path = require('path');
 var favicon = require('static-favicon');
 var logger = require('morgan');
@@ -57,3 +77,4 @@ app.use(function(err, req, res, next) {
 
 
 module.exports = app;
+*/

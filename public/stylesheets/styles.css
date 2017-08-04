@@ -1,0 +1,552 @@
+/*green #3D9970
+
+font-family: 'Oswald', sans-serif;
+font-family: 'Droid Serif', serif;
+
+*/
+
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
+body {
+  color: #5a5a5a;
+  font-family: 'Droid Serif', serif;
+
+
+}
+
+h2 {
+  color: #3D9970;
+
+}
+
+input, textarea {
+  outline: none;
+}
+
+.lead {
+  font-size: .8em;
+  text-align: center;
+}
+
+.container {
+  width: 100%;
+}
+
+
+/* CUSTOMIZE THE NAVBAR
+-------------------------------------------------- */
+
+/* Special class on .container surrounding .navbar, used for positioning it into place. */
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 20;
+
+}
+
+/* Flip around the padding for proper display in narrow viewports */
+.navbar-wrapper > .container {
+  padding-right: 0;
+  padding-left: 0;
+}
+.navbar-wrapper .navbar {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+.navbar-wrapper .navbar .container {
+  width: auto;
+
+}
+
+.navbar-inverse  {
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.container > .navbar-collapse {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.collapse {
+  display: block;
+  width: 100%;
+}
+.navbar-inverse .navbar-nav > li > a {
+  font-size: 1.4em;
+  color: white;
+  font-weight: bolder;
+  font-family: 'Oswald', sans-serif;
+  display: inline;
+  width: 100%;
+
+}
+
+#navbar {
+  text-align: center;
+}
+
+.nav li {
+  display: inline;
+  width: 100%;
+  padding-left: 2.5px;
+  padding-right: 2.5px;
+}
+
+.jumbotron {
+  margin-bottom: 0px;
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("../images/house.jpg");
+    background-position: 0% 25%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: white;
+    height: 25em;
+    text-shadow: black 0.3em 0.3em 0.3em;
+    margin-bottom: 6em;
+    box-shadow: 0 8px 6px -6px black;
+}
+
+.jumbo-phone {
+  display: block;
+  text-align: center;
+  font-size: 1em;
+}
+
+.jumboh1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-top: 1.5em;
+  font-family: 'Oswald', sans-serif;
+}
+
+.intro {
+  text-align: center;
+  margin-top: 1.5em;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #fff;
+}
+
+.jumbotron p {
+  font-size: 1em;
+  padding: .1em;
+}
+
+.marketing #top-row p {
+  font-size: 1em;
+  font-weight: 400;
+}
+
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .col-lg-4 {
+  margin-bottom: 40px;
+  text-align: center;
+}
+.marketing h2 {
+  font-weight: normal;
+  font-size: 1.5em;
+}
+.marketing .col-lg-4 p {
+  margin-right: 10px;
+  margin-left: 10px;
+  font-size: .8em;
+}
+
+
+
+/* Featurettes
+------------------------- */
+
+.featurette-divider {
+  margin: 20px 0; /* Space out the Bootstrap <hr> more */
+  width: 100%;
+}
+
+/* Thin out the marketing headings */
+#featurette-heading1 {
+  font-weight: 300;
+  line-height: 1;
+  letter-spacing: -1px;
+  text-align: center;
+  color: #2f2f35;
+  font-size: 2em;
+
+}
+
+
+#featurette1 {
+/*  background-color: #f8f8f8; */
+  padding-bottom: 75px;
+  color: #2f2f35;
+  height: 25em;
+}
+
+.subparagraph {
+  text-align: left;
+  font-size: .7em;
+  font-weight: lighter;
+  line-height: 1.7;
+}
+
+/* IMAGE GALLERY **************************************/
+.page-header {
+  border: none;
+}
+
+.gallery-section {
+  display: block;
+  overflow: hidden;
+}
+
+
+/*.marketing .col-lg-4 {
+  width: 100%;
+}*/
+
+.crop {
+  height: 200px;
+  width: 250px;
+  overflow: hidden;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.crop img {
+ height: 200px;
+ width: 250px;
+ 
+}
+
+.col-xs-6 {
+  width: 100%;
+  overflow: contain;
+}
+
+
+/*.crop {
+  height: 300px;
+  width: 400px;
+  overflow: hidden;
+}
+
+.crop img {
+ height: 250px;
+ width: 400px;
+} */
+
+
+
+/* CONTACT FORM ***************************************/
+.contact-form {
+  height: 37em;
+  margin-bottom: 0;
+  background-color: #2f2f35;/*#0e1717;*/
+}
+
+.contact {
+  width: 100%;
+
+}
+
+
+.contact h2 {
+  text-align: center;
+  color: #b2d237;
+  padding-top: 1em;
+}
+
+.contact input[type=text], input[type=email], input[type=tel]{
+  background: rgba(255,255,255,.18);
+  height: 39px;
+  border: 1px solid transparent;
+  font-size: 14px;
+  width: 100%;
+  color: #b2d237;
+}
+
+.contact input[type=text]:focus, input[type=email]:focus, input[type=tel]:focus, .contact textarea:focus {
+  background: rgba(255,255,255,.18);
+  border: 1px solid #fff;
+}
+
+.contact textarea {
+  background: rgba(255,255,255,.18);
+  height: 98px;
+  border: 1px solid transparent;
+  padding: 10px;
+  font-size: 14px;
+  width: 100%;
+  color: #b2d237;
+}
+
+
+.form-group {
+  display: block;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.form-group label {
+  display: block;
+  color: white;
+  font-size: .8em;
+  font-weight: lighter;
+}
+
+.button {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  height: 38px;
+  color: #fff;
+  min-width: 112px;
+  padding: 0 10px;
+  display: block;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+  border: 2px solid #b2d237;
+  background-color: #0e1717;
+  border-radius: 0;
+}
+
+
+/* FOOTER **********************************************/
+footer {
+  background-color: #0e1717;/*#2f2f35;*/
+  height: 38em;
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+
+.footer-content {
+  padding-top: 4em;
+}
+
+footer .col-md-3 {
+  margin-bottom: 35px;
+}
+
+footer h4 {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 3px;
+  font-size: 10px;
+  font-family: Lato,"Helvetica Neue",Arial;
+  margin: 0;
+}
+
+footer p {
+  margin-top: 20px;
+  font-size: 8px;
+  line-height: 28px;
+}
+
+.icon {
+  margin-top: 20px;
+
+}
+
+
+footer ul {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 20px;
+}
+
+footer li {
+  font-size: 8px;
+  line-height: 28px;
+
+}
+
+
+
+/* RESPONSIVE CSS
+-------------------------------------------------- */
+
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+
+@media (min-width: 992px) {
+  .featurette-heading {
+    margin-top: 120px;
+  }
+
+  /*.brand-header {
+    color: white;
+    font-size: 1.4em;
+    font-weight: bolder;
+    font-family: 'Oswald', sans-serif;
+  } */
+
+  .navbar-nav {
+    float:right;
+    margin-right: -15px;
+  }
+
+  .nav li {
+    padding-top: 1em;
+    float: left;
+    display: 0;
+    width: auto;
+    text-transform: uppercase;
+  }
+
+  .navbar-inverse .navbar-nav > li > a {
+    font-size: 1.2em;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+
+  }
+
+  .jumbotron {
+    height: 42em;
+  }
+
+  .jumbotron h1 {
+    font-size: 4em;
+    margin-top: 2em;
+  }
+
+  .jumbotron p {
+    font-size: 1.2em;
+    font-weight: bolder;
+  }
+
+  .intro {
+    width: 15%;
+
+  }
+
+  .row {
+    height: 30em;
+  }
+
+  #top-row {
+    width: 90%;
+    height: 25em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #top-row p {
+    line-height: 24px;
+    font-size: .9em;
+  }
+
+
+  #featurette-heading1 {
+    font-weight: 300;
+    line-height: 1;
+    letter-spacing: -1px;
+    text-align: center;
+    font-size: 3em;
+    padding-bottom: .5em;
+
+  }
+
+
+  #featurette1 {
+    padding-bottom: 75px;
+    height: 38em;
+
+  }
+
+  .subparagraph {
+    text-align: left;
+    font-size: 1em;
+    font-weight: lighter;
+    line-height: 2;
+    padding-left: 1em;
+  }
+
+  /* FANCYBOX GALLERY *************************/
+  .crop {
+    height: 300px;
+    width: 400px;
+    overflow: hidden;
+  }
+
+  .crop img {
+   height: 250px;
+   width: 400px;
+  }
+
+  .gallery-section {
+    display: block;
+    overflow: inherit;
+  }
+
+  .col-xs-6 {
+    width: 33%;
+  }
+
+  /**********************************************/
+
+  .contact-form {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .contact {
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  h2 {
+    font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.4em;
+  }
+
+  .featurette-heading {
+    font-size: 2em;
+    margin-top: 40px;
+    text-align: center;
+  }
+
+  .featurette-divider {
+    margin: 10px 0;
+
+  }
+
+  footer {
+    height: 20em;
+  }
+
+  footer h4 {
+    font-size: 16px;
+  }
+
+  footer p {
+    font-size: 14px;
+  }
+
+  footer li {
+    font-size: 14px;
+  }
+
+  .footer-content {
+    padding-top: 5em;
+  }
+}
